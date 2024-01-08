@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,700&family=Sen:wght@400;500;600;700;800&display=swap");
+
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Sen', sans-serif;
+
+*/
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  color: green;
+}
+
+.menu-container {
+  flex: 6;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  list-style: none;
+  font-family: "Sen", sans-serif;
+}
+
+.menu-list-item {
+  margin-right: 30px;
+}
+
+.menu-list-item.active {
+  font-weight: 700;
+}
+
+.profile-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-text-container {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-text {
+  color: #fff;
+  margin-right: 2px;
+}
+
+.fas.fa-caret-down {
+  color: white;
+}
+
+.toogle {
+  width: 40px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.toogle-icon {
+  color: goldenrod;
+}
+
+.toogle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: #000;
+  border-radius: 50%;
+
+  position: absolute;
+  right: 1px;
+}
+
+.sidebar {
+  width: 50px;
+  height: 100%;
+  background-color: #000;
+
+  position: fixed;
+  top: 0;
+}
