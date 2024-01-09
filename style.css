@@ -88,6 +88,7 @@ body {
   height: 20px;
   background-color: #fff;
   border-radius: 30px;
+  cursor: pointer;
 
   position: relative;
 
@@ -117,4 +118,19 @@ body {
 
   position: fixed;
   top: 0;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.sidebar-menu-icon {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.container {
+  background-color: #151515;
+  height: calc(100vh - 50px);
 }
