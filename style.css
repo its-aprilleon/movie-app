@@ -127,10 +127,40 @@ body {
 
 .sidebar-menu-icon {
   color: #fff;
-  margin-bottom: 30px;
+  font-size: 20px;
+  margin-bottom: 40px;
 }
 
 .container {
   background-color: #151515;
   height: calc(100vh - 50px);
+  color: #fff;
+}
+
+.content-container {
+  margin-left: 50px;
+}
+
+.featured-content {
+  height: 50vh;
+  padding: 50px;
+}
+
+.featured-title {
+  width: 200px;
+}
+
+.featured-desc {
+  width: 500px;
+  color: lightgray;
+  margin: 30px 0;
+}
+
+.featured-button {
+  background-color: rgb(45, 209, 45);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  outline: none;
 }
