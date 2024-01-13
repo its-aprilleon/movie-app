@@ -3,8 +3,12 @@
 /* 
 font-family: 'Roboto', sans-serif;
 font-family: 'Sen', sans-serif;
-
 */
+
+:root {
+  --rc: rgb(216, 5, 5);
+  --gc: #4dbf00;
+}
 
 * {
   margin: 0;
@@ -32,7 +36,9 @@ body {
 }
 
 .logo {
-  color: green;
+  color: var(--rc);
+  font-style: italic;
+  font-weight: 700;
 }
 
 .menu-container {
@@ -133,7 +139,7 @@ body {
 
 .container {
   background-color: #151515;
-  height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
   color: #fff;
 }
 
@@ -157,10 +163,100 @@ body {
 }
 
 .featured-button {
-  background-color: rgb(45, 209, 45);
+  font-weight: bold;
+  background-color: var(--gc);
   padding: 10px 20px;
   border-radius: 10px;
   color: #fff;
   border: none;
   outline: none;
+}
+
+.movie-list-container {
+  padding: 0 20px;
+}
+
+.movie-list-title {
+  color: white;
+}
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  height: 300px;
+}
+
+.movie-list-item {
+  margin-right: 30px;
+  position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img {
+  margin: 0 30px;
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-btn {
+  opacity: 1;
+}
+
+.movie-list-item-img {
+  border-radius: 10px;
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+.movie-list-item-title {
+  background-color: #1a1818;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 10px;
+  position: absolute;
+  top: 10%;
+  left: 50px;
+  opacity: 0;
+}
+
+.movie-list-item-desc {
+  background-color: #1a1818;
+  font-size: 12px;
+  padding: 10px;
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  width: 200px;
+  opacity: 0;
+}
+
+.movie-list-item-btn {
+  font-size: 15px;
+  /* font-weight: bold; */
+  color: rgb(244, 238, 227);
+  background-color: var(--gc);
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  opacity: 0;
+}
+
+.movie-list-wrapper {
+  position: relative;
+}
+
+.arrow {
+  color: rgba(167, 161, 161, 0.812);
+  font-size: 120px;
+
+  position: absolute;
+  right: 0;
+  top: 90px;
 }
