@@ -180,10 +180,17 @@ body {
   color: white;
 }
 
+.movie-list-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 .movie-list {
   display: flex;
   align-items: center;
   height: 300px;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
 }
 
 .movie-list-item {
@@ -223,38 +230,38 @@ body {
 }
 
 .movie-list-item-desc {
+  width: 230px;
   background-color: #1a1818;
   font-size: 12px;
   padding: 10px;
+
   position: absolute;
   top: 30%;
   left: 50px;
-  width: 200px;
+
   opacity: 0;
 }
 
 .movie-list-item-btn {
   font-size: 15px;
-  /* font-weight: bold; */
   color: rgb(244, 238, 227);
   background-color: var(--gc);
   padding: 10px;
   border-radius: 10px;
   outline: none;
   border: none;
+
   position: absolute;
   bottom: 20px;
   left: 50px;
+
   opacity: 0;
 }
 
-.movie-list-wrapper {
-  position: relative;
-}
-
 .arrow {
-  color: rgba(167, 161, 161, 0.812);
+  color: lightgray;
   font-size: 120px;
+  opacity: 0.5;
 
   position: absolute;
   right: 0;
