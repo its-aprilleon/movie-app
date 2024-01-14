@@ -21,10 +21,10 @@ body {
 .navbar {
   width: 100%;
   height: 50px;
-  background-color: #000;
 }
 
 .navbar-container {
+  background-color: #000;
   display: flex;
   align-items: center;
   padding: 0 50px;
@@ -75,25 +75,21 @@ body {
 }
 
 .profile-text-container {
+  color: #fff;
   margin: 0 20px;
   display: flex;
   align-items: center;
 }
 
 .profile-text {
-  color: #fff;
   margin-right: 2px;
 }
 
-.fas.fa-caret-down {
-  color: white;
-}
-
-.toogle {
+.toggle {
   width: 40px;
   height: 20px;
   background-color: #fff;
-  border-radius: 30px;
+  border-radius: 20px;
   cursor: pointer;
 
   position: relative;
@@ -103,11 +99,11 @@ body {
   justify-content: space-around;
 }
 
-.toogle-icon {
+.toggle-icon {
   color: goldenrod;
 }
 
-.toogle-ball {
+.toggle-ball {
   width: 18px;
   height: 18px;
   background-color: #000;
@@ -121,6 +117,7 @@ body {
   width: 50px;
   height: 100%;
   background-color: #000;
+  color: #fff;
 
   position: fixed;
   top: 0;
@@ -132,7 +129,6 @@ body {
 }
 
 .sidebar-menu-icon {
-  color: #fff;
   font-size: 20px;
   margin-bottom: 40px;
 }
@@ -266,4 +262,39 @@ body {
   position: absolute;
   right: 0;
   top: 90px;
+}
+
+.container.active {
+  background-color: white;
+}
+
+.profile-text-container.active {
+  color: black;
+}
+
+.movie-list-title.active {
+  color: black;
+}
+
+.navbar-container.active {
+  background-color: white;
+  color: black;
+}
+
+.sidebar.active {
+  background-color: white;
+  color: black;
+}
+
+.menu-list.active {
+  color: black;
+}
+
+.toggle.active {
+  background-color: rgb(11, 11, 11);
+}
+
+.toggle-ball.active {
+  background-color: white;
+  transform: translateX(-19px);
 }
