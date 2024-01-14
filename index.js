@@ -6,8 +6,9 @@ arrow.forEach((arrow, i) => {
   let itemnumber = movielist[i].querySelectorAll("img").length;
 
   arrow.addEventListener("click", () => {
+    const ratio = Math.floor(window.innerWidth / 270);
     clickcounter++;
-    if (itemnumber - (4 + clickcounter) >= 0) {
+    if (itemnumber - (4 + clickcounter) + (4 - ratio) >= 0) {
       movielist[i].style.transform = `translateX(${
         movielist[i].computedStyleMap().get("transform")[0].x.value - 300
       }px)`;

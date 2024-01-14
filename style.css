@@ -16,6 +16,7 @@ font-family: 'Sen', sans-serif;
 
 body {
   font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 
 .navbar {
@@ -297,4 +298,13 @@ body {
 .toggle-ball.active {
   background-color: white;
   transform: translateX(-19px);
+}
+
+@media (max-width: 920px) {
+  .menu-container {
+    display: none;
+  }
+  .featured-desc {
+    font-size: 12px;
+  }
 }
